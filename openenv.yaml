@@ -1,0 +1,57 @@
+name: CloudSweep-v1
+version: 1.0.0
+description: A Cloud FinOps optimization environment where agents identify and act on inefficient cloud resources to reduce costs.
+author: AI Engineer
+email: engineer@example.com
+
+# Task definitions
+tasks:
+  - id: cleanup_unattached
+    name: Clean up Unattached Resources
+    description: Identify and delete resources that have not been accessed for >30 days and are not production.
+    difficulty: easy
+    success_criteria:
+      - Delete at least 80% of eligible unattached non-production resources
+      - Do not delete any production resources
+      - Achieve minimum cost savings of $50
+
+  - id: rightsize_instances
+    name: Right-size Over-provisioned Instances
+    description: Identify EC2/RDS instances with CPU <5% for 7+ days and reduce their size/cost.
+    difficulty: medium
+    success_criteria:
+      - Right-size at least 70% of eligible over-provisioned instances
+      - Do not right-size instances with CPU >=5% or accessed within 7 days
+      - Achieve minimum cost savings of $30 from right-sizing
+
+  - id: production_idle_handling
+    name: Handle Production Idle Resources
+    description: Identify production instances that are idle (CPU <5%) and take appropriate action (tag for review or notify owner) without deleting.
+    difficulty: hard
+    success_criteria:
+      - Correctly tag/notify at least 80% of eligible production idle resources
+      - Do not delete any production resources
+      - Take appropriate action on all identified production idle resources
+
+# Environment specifications
+observation_space:
+  type: CloudSweepObservation
+  description: Contains list of cloud resources with cost, usage, and metadata fields
+
+action_space:
+  type: CloudSweepAction
+  description: Actions include delete, right-size, tag for review, notify owner, or no-op on specific resources
+
+reward_range:
+  min: 0.0
+  max: 1.0
+  description: Reward is float between 0 and 1, with penalties for dangerous actions
+
+# Entry point
+entry_point: main:app
+
+# Dependencies
+dependencies:
+  - fastapi>=0.68.0
+  - uvicorn>=0.15.0
+  - pydantic>=1.8.0

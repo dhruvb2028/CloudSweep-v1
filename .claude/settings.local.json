@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python:*)",
+      "Bash(pip install:*)",
+      "Bash(where python:*)",
+      "Bash(C:\\\\Users\\\\dhruv\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python310\\\\python.exe:*)",
+      "Bash(C:/Users/dhruv/AppData/Local/Programs/Python/Python310/python.exe:*)",
+      "Bash(netstat -ano)",
+      "Bash(findstr :8001)",
+      "Bash(taskkill:*)",
+      "Bash(C:\\\\Windows\\\\System32\\\\taskkill.exe:*)",
+      "Bash(findstr :8000)"
+    ]
+  }
+}
