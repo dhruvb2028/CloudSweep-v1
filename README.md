@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # CloudSweep-v1: OpenEnv-Compliant Cloud FinOps Environment
 
 A reinforcement learning environment for cloud cost optimization where agents identify and act on inefficient cloud resources to reduce expenses while avoiding dangerous actions.
@@ -280,3 +281,15 @@ This environment was created for the OpenEnv Cloud FinOps challenge. Feel free t
 ## Contact
 
 For issues or questions regarding this environment, please refer to the project repository or open an issue in the appropriate forum.
+=======
+---
+title: CloudSweep
+emoji: 🐠
+colorFrom: pink
+colorTo: yellow
+sdk: docker
+pinned: false
+---
+
+Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+>>>>>>> d1b7cc45de9013f4130045e72fb82cb6ca95abad
