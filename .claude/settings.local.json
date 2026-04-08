@@ -10,7 +10,8 @@
       "Bash(findstr :8001)",
       "Bash(taskkill:*)",
       "Bash(C:\\\\Windows\\\\System32\\\\taskkill.exe:*)",
-      "Bash(findstr :8000)"
+      "Bash(findstr :8000)",
+      "Bash(curl:*)"
     ]
   }
 }
