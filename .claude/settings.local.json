@@ -15,7 +15,11 @@
       "Bash(openenv validate:*)",
       "Bash(uv lock:*)",
       "Bash(pip show:*)",
-      "Bash(docker build:*)"
+      "Bash(docker build:*)",
+      "Bash(openenv serve:*)",
+      "Bash(find:*)",
+      "Bash(tee validation_output.txt)",
+      "Bash(python3 -c \"import sys, json; print\\('Valid JSON:', json.load\\(sys.stdin\\) is not None\\)\")"
     ]
   }
 }

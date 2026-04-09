@@ -1,0 +1,14 @@
+C:\Users\dhruv\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\__init__.py:113: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (7.1.0)/charset_normalizer (3.4.5) doesn't match a supported version!
+  warnings.warn(
+[OK] CloudSweep-v1: Ready for multi-mode deployment
+
+Supported deployment modes:
+  [YES] docker
+  [YES] openenv_serve
+  [YES] uv_run
+  [YES] python_module
+
+Usage examples:
+  cd CloudSweep-v1 && uv run server
+  cd CloudSweep-v1 && openenv build
+  cd CloudSweep-v1 && openenv push
