@@ -11,7 +11,9 @@
       "Bash(taskkill:*)",
       "Bash(C:\\\\Windows\\\\System32\\\\taskkill.exe:*)",
       "Bash(findstr :8000)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "Bash(openenv validate:*)",
+      "Bash(uv lock:*)"
     ]
   }
 }

@@ -1,0 +1,21 @@
+[project]
+name = "CloudSweep-v1"
+version = "1.0.0"
+description = "A Cloud FinOps optimization environment where agents identify and act on inefficient cloud resources to reduce costs."
+authors = [
+    {name = "AI Engineer", email = "engineer@example.com"}
+]
+dependencies = [
+    "fastapi>=0.68.0",
+    "uvicorn>=0.15.0",
+    "pydantic>=1.8.0",
+    "openai>=1.0.0",
+    "openenv-core>=0.2.0"
+]
+
+[project.scripts]
+server = "server.app:main"
+
+[tool.openenv]
+environment_name = "CloudSweep-v1"
+entry_point = "server.app:app"

@@ -48,7 +48,7 @@ reward_range:
   description: Reward is float between 0 and 1, with penalties for dangerous actions
 
 # Entry point
-entry_point: main:app
+entry_point: server.app:app
 
 # Dependencies
 dependencies:
