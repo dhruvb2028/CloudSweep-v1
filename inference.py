@@ -75,6 +75,10 @@ If no action is appropriate, use no_op with any resource ID."""
             )
 
             import json
+            # Handle potential None or empty response content
+            if not response.choices[0].message.content:
+                raise ValueError("Empty response from OpenAI API")
+
             result = json.loads(response.choices[0].message.content)
             action_type = result["action_type"]
             resource_id = result["resource_id"]

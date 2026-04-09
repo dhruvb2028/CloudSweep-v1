@@ -13,7 +13,9 @@
       "Bash(findstr :8000)",
       "Bash(curl:*)",
       "Bash(openenv validate:*)",
-      "Bash(uv lock:*)"
+      "Bash(uv lock:*)",
+      "Bash(pip show:*)",
+      "Bash(docker build:*)"
     ]
   }
 }
